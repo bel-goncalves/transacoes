@@ -1,5 +1,6 @@
 import fetchData from "./fetchData.js";
 import getPayMethods from "./getPayMethods.js";
+import getStatus from "./getStatus.js";
 import { Purchase } from "./interfaces.js";
 import sumValues from "./sumValues.js";
 
@@ -10,6 +11,7 @@ async function handleData() {
   if (data) {
     sumValues(data);
     getPayMethods(data);
+    getStatus(data);
   }
 }
 handleData();
