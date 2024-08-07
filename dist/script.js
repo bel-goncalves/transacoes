@@ -1,3 +1,3 @@
-"use strict";
-console.log("hello world");
+import fetchData from "./fetchData.js";
+fetchData();
 //# sourceMappingURL=script.js.map
