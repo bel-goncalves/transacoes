@@ -8,7 +8,6 @@ async function handleData() {
   );
   if (data) {
     sumValues(data);
-    console.log(sumValues(data));
   }
 }
 handleData();

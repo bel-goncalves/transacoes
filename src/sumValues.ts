@@ -7,6 +7,13 @@ export default function sumValues(data: Purchase[]): number {
     );
     return acum + formatValue;
   }, 0);
-
+  showTotal(total);
   return total;
+}
+
+function showTotal(total: number) {
+  const totalValues = document.getElementById("totalValues");
+  if (totalValues) {
+    totalValues.innerHTML += ` R$ ${total}`;
+  }
 }
