@@ -1,8 +1,11 @@
 import fetchData from "./fetchData.js";
+import sumValues from "./sumValues.js";
 async function handleData() {
     const data = await fetchData("https://api.origamid.dev/json/transacoes.json");
-    console.log(data);
-    data?.forEach((i) => console.log(i));
+    if (data) {
+        sumValues(data);
+        console.log(sumValues(data));
+    }
 }
 handleData();
 //# sourceMappingURL=script.js.map
