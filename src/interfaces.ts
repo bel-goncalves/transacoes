@@ -1,10 +1,10 @@
 export interface Purchase {
-  ClienteNovo: number;
+  ["Cliente Novo"]: number;
   Data: string;
   Email: string;
-  FormaDePagamento: string;
+  ["Forma de Pagamento"]: string;
   ID: number;
   Nome: string;
   Status: string;
-  Valor: string;
+  ["Valor (R$)"]: string;
 }

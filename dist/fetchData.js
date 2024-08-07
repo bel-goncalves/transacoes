@@ -1,13 +1,15 @@
-const fetchData = async function () {
-    const response = await fetch("https://api.origamid.dev/json/transacoes.json");
-    if (!response.ok) {
-        throw new Error(`Erro: ${response.status}`);
-    }
-    else {
+export default async function fetchData(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok)
+            throw new Error(`Error: ${response.status}`);
         const json = await response.json();
-        console.log(json);
         return json;
     }
-};
-export default fetchData;
+    catch (error) {
+        if (error instanceof Error)
+            console.log(`fetchData: ${error.message}`);
+        return null;
+    }
+}
 //# sourceMappingURL=fetchData.js.map
