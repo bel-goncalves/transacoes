@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  padding: 2rem;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  margin: 0rem 0rem 1rem 0rem;
+  border-top: 0.25rem solid lightblue;
+}
+
+ul {
+  margin: 0rem;
+  padding: 0rem 1rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+table {
+  border-spacing: 0;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 0.5rem 1rem;
+}
+
+table tr:nth-child(even) {
+  background-color: aliceblue;
+}
