@@ -3,9 +3,9 @@ import { Purchase } from "./interfaces.js";
 export default function sumValues(data: Purchase[]): number {
   const total = data.reduce((acum: number, value: Purchase) => {
     const formatValue = Number(
-      value["Valor (R$)"].replace(".", "").replace(",", ".").replace("-", "0")
+      value["Valor (R$)"].replace(".", "").replace(",", ".")
     );
-    return acum + formatValue;
+    return formatValue ? acum + formatValue : acum + 0;
   }, 0);
   showTotal(total);
   return total;
