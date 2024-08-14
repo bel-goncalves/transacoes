@@ -6,19 +6,31 @@
     <title>Transações</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Estatísticas</h1>
+    <main id="app">
       <section>
+        <h1>Estatísticas</h1>
         <p id="totalValues">Total:</p>
-      </section>
-      <section>
         <p id="creditCard">Cartão de Crédito:</p>
         <p id="boleto">Boleto:</p>
+        <ul id="status"></ul>
+        <p id="mostSales">Dia com mais vendas:</p>
       </section>
       <section>
-        <ul id="status"></ul>
+        <h1>Tabela de Vendas</h1>
+        <table id="purchaseTable">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Compra</th>
+              <th>Pagamento</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </section>
-    </div>
+    </main>
     <script type="module" src="/src/script.ts"></script>
   </body>
 </html>

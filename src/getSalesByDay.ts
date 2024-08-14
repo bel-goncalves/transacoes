@@ -52,10 +52,8 @@ export default function getSalesByDay(data: Purchase[]) {
 }
 
 function showSalesByDay(mostSales: string) {
-  const status = document.getElementById("status");
+  const status = document.getElementById("mostSales");
   if (status) {
-    status.innerHTML += `
-            <li>Dia com mais vendas: ${mostSales}</li>
-        `;
+    status.innerHTML += ` ${mostSales}`;
   }
 }

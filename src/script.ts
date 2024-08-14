@@ -1,4 +1,5 @@
 import fetchData from "./fetchData.js";
+import fillTable from "./fillTable.js";
 import getPayMethods from "./getPayMethods.js";
 import getSalesByDay from "./getSalesByDay.js";
 import getStatus from "./getStatus.js";
@@ -14,6 +15,7 @@ async function handleData() {
     getPayMethods(data);
     getStatus(data);
     getSalesByDay(data);
+    fillTable(data);
   }
 }
 handleData();
