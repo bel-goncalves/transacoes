@@ -27,6 +27,10 @@ ul li {
   margin-bottom: 1rem;
 }
 
+#mostSales span {
+  background-color: antiquewhite;
+}
+
 table {
   border-spacing: 0;
   text-align: left;

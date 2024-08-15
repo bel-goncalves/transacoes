@@ -54,6 +54,6 @@ export default function getSalesByDay(data: Purchase[]) {
 function showSalesByDay(mostSales: string) {
   const status = document.getElementById("mostSales");
   if (status) {
-    status.innerHTML += ` ${mostSales}`;
+    status.innerHTML += ` <span>${mostSales}<span>`;
   }
 }
