@@ -14,6 +14,11 @@ export default function sumValues(data: Purchase[]): number {
 function showTotal(total: number) {
   const totalValues = document.getElementById("totalValues");
   if (totalValues) {
-    totalValues.innerHTML += ` R$ ${total}`;
+    totalValues.innerHTML +=
+      " " +
+      total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
   }
 }
