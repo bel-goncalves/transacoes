@@ -30,7 +30,8 @@ Este é um projeto simples desenvolvido em TypeScript, utilizando Vite como bund
    ```
 
 3. **Execute o servidor de desenvolvimento:**
-   `bash
+   ```bash
     npm run dev
-    `
-   Acesse http://localhost:5173/index.html
+   ```
+
+Acesse http://localhost:5173/index.html
